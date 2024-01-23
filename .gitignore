@@ -1,0 +1,7 @@
+*.env
+*.csv
+!indecator_database.csv
+RESULTS
+pkl_to_csv.py
+cluster_test
+optimization
