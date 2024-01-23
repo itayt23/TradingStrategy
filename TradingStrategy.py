@@ -882,9 +882,9 @@ if __name__=="__main__":
             trading_strategy.benchmark = benchmark
             trading_strategy.build_dataframe()
             trading_strategy.run_backtest(start_date='2018-01-01',verbose=True)
-            # trading_strategy.optimizer(start_date='2018-01-01',optimize_weight=False,optimize_val=True,estimated_runtime=True)
+            trading_strategy.optimizer(start_date='2018-01-01',optimize_weight=False,optimize_val=True,estimated_runtime=True)
         total_seconds = (datetime.now(tz=TIMEZONE) - time_start).total_seconds()
-        # se.send_me_email(f"End checking weights combinations for {benchmark} in {total_seconds/60} Minutes - {PROGRAM_NAME}")
+        se.send_me_email(f"End checking weights combinations for {benchmark} in {total_seconds/60} Minutes - {PROGRAM_NAME}")
 
     except Exception as e:
         if hasattr(e, "line"):

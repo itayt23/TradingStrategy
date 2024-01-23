@@ -14,10 +14,10 @@ load_dotenv()
 
 sender_email = os.environ.get('GMAIL_SENDER')
 sender_password = os.environ.get('GMAIL_PASSWORD')
-receiver_emails = ["testalmog1@gmail.com","itayhcm@gmail.com"]
-receiver_my_emails = ["testalmog1@gmail.com"]
+receiver_emails = ["itayhcm@gmail.com"]
+receiver_my_emails = ["itayhcm@gmail.com"]
 cc_recipients = []  
-sender_name = "Almog Tal"
+sender_name = "Itay Lael"
 developer_team = "Horizon Developer Team"
 
 LP1_ACCOUNT = os.getenv('LP1_ACCOUNT')
